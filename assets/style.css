@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vazirmatn:wght@100..900&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-family: "Vazirmatn";
+}
+
+body {
+    line-height: 1.6;
+    background-color: #edf2f4;
+}
+
+header {
+    background-color: #641220;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+header::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* whitot flex */
+.logo {
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    float: none;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle-bar {
+    background-color: white;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.nav {
+    list-style: none;
+    width: 70%;
+    margin: auto;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.nav a {
+    color: #fff;
+}
+
+.nav a:hover {
+    border-radius: 5px;
+    color: #f0e6ef;
+    background-color: #6e1423;
+}
+
+
+.nav-details {
+    display: none;
+}
+
+.btn-summary {
+    display: none;
+}
+
+main {
+    text-align: center;
+}
+
+main h1 {
+    padding: 20px;
+    color: #6e1423;
+}
+
+main p {
+    color: #6e1423;
+    font-size: 0.8rem;
+    width: 500px;
+    margin: auto;
+    font-weight: bold;
+}
+
+@media (max-width:760px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        float: none;
+    }
+
+    .logo {
+        font-size: 1rem;
+
+    }
+
+    .menu {
+        clear: both;
+        float: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+
+    .nav li {
+        display: block;
+        margin: 0;
+        text-align: center;
+        padding: 0.5rem 0;
+        border-top: 1px solid #f0e6ef;
+    }
+
+    .btn-summary {
+        display: inline-block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+
+
+    }
+
+    .nav-details {
+        display: inline-block;
+        clear: both;
+        float: none;
+        width: 100%;
+        text-align: center;
+        list-style: none;
+
+    }
+
+    .nav-details li {
+        margin-top: 5px;
+        padding: 5px;
+        border-top: 1px solid #edf2f4;
+
+    }
+
+    .nav-details a {
+        color: #f0e6ef;
+
+    }
+}
